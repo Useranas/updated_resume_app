@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unaversity_name: MyString
+  qualified_degree: MyString
+  subject: MyString
+  marks: MyString
+
+two:
+  unaversity_name: MyString
+  qualified_degree: MyString
+  subject: MyString
+  marks: MyString

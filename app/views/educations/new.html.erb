@@ -1,0 +1,11 @@
+<h1>Education details</h1>
+
+<%= form_for(@user, url: educations_path ,method: :post) do |f|%>
+	
+	<%=f.fields_for :educations do |education|%>
+	  <%= render 'education_fields', :f => education%>
+  <%end%>
+  <%= link_to_add_association 'Add education detail', f, :educations %><br/>
+   <%= f.submit 'create'%>
+<%end%>
+    

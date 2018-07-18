@@ -1,0 +1,15 @@
+<h2>Personal Information</h2>
+<%if @about.present?%>
+  <%= link_to 'About', edit_about_path(id: @about.id), class: 'text_cover'%><br/>
+  <%else%>
+ <%= link_to 'About', new_about_path, class: 'text_cover'%><br/>
+<%end%> 
+<% if @user.present?%>
+  <%= link_to 'Education', edit_education_path(id: @user.id), class: 'text_cover'%>
+  <%else%>
+<%= link_to 'Education', new_education_path, class: 'text_cover'%><br/>
+<%end%><br/>
+<%= link_to 'Experience', '#', class: 'text_cover'%><br/>
+<%= link_to 'Interest', '#', class: 'text_cover'%><br/>
+<%= link_to 'Skill', '#', class: 'text_cover'%>
+<%=link_to 'logout', destroy_user_session_path, method: :delete, class: 'text_cover'%>
